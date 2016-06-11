@@ -204,7 +204,7 @@ src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
 
 				next_posts_link('&laquo; Previous entries');
 
-				echo '&nbsp;';
+				echo ' | ';
 
 				previous_posts_link('Next entries &raquo;');
 
