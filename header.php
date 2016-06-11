@@ -15,7 +15,7 @@
 <meta name="verify-v1" content="6l3W/yUxl0zcjpKYGj7RQXvIcAciModLvPR1sLOR+sM=" />
 <META name="y_key" content="e8305635866c8fff">
 <meta name="msvalidate.01" content="4CE54CE377B30DFC1C040EE5F43582B0" />
-<meta name="blogcatalog" content="9BC9469580" /> 
+<meta name="blogcatalog" content="9BC9469580" />
 <?php if (is_page('about')) echo '<script type="text/javascript" src="http://mywebmastertips.com/wp-includes/js/main.js"></script>'; ?>
 <script type="text/javascript">
 	window.google_analytics_uacct = "UA-3173227-9";
