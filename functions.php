@@ -581,7 +581,7 @@
 
       echo get_current_theme()
 
-?> theme by <a href="http://www.prelovac.com/vladimir/">Vladimir Prelovac</a> modified by <a href="http://www.linkedin.com/in/glondon" target="_blank">Greg London</a>.</small> <?php
+?> theme by <a href="http://www.prelovac.com/vladimir/">Vladimir Prelovac</a> modified by <a href="http://greglondon.info" target="_blank">Greg London</a>.</small> <?php
 
   }
 
