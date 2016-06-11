@@ -204,9 +204,12 @@ src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
 
 				next_posts_link('&laquo; Previous entries');
 
-				echo ' | ';
+				if( get_previous_posts_link() ) {
 
-				previous_posts_link('Next entries &raquo;');
+					echo ' | ';
+					previous_posts_link('Next entries &raquo;');
+					
+				}
 
 			?>
 
