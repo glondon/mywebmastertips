@@ -20,6 +20,7 @@
 <script type="text/javascript">
 	window.google_analytics_uacct = "UA-3173227-9";
 </script>
+<script async defer src="https://buttons.github.io/buttons.js"></script>
 </head>
 
 <body>
