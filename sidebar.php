@@ -118,7 +118,7 @@
 	    	<p>
 	    		<a aria-label="Follow @glondon on GitHub" data-count-aria-label="# followers on GitHub" 
 	    		data-count-api="/users/glondon#followers" data-count-href="/glondon/followers" href="https://github.com/glondon" 
-	    		class="github-button">Follow @glondon</a>
+	    		class="github-button" title="Follow Greg's projects on GitHub!">Follow @glondon</a>
 	    	</p>
 
 			<p>
