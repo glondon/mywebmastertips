@@ -40,7 +40,7 @@ else { ?>
     var googleSearchIframeName = "cse-search-results";
     var googleSearchFormName = "cse-search-box";
     var googleSearchFrameWidth = 900;
-    var googleSearchFrameHeight = 900;
+    var googleSearchFrameHeight = 1000;
     var googleSearchDomain = "www.google.com";
     var googleSearchPath = "/cse";
   </script>
