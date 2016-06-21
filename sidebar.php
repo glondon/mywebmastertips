@@ -67,17 +67,17 @@
 
 	 	         	
 
-		<div class="search-form">  
+		<!--<div class="search-form">  
 
-			<?php $search_text = "Search this site...."; ?> 
+			<?php //$search_text = "Search this site...."; ?> 
 
-	    <form method="get" id="searchform" action="<?php bloginfo('home'); ?>/"> 
+	    <form method="get" id="searchform" action="<?php //bloginfo('home'); ?>/"> 
 
-	        <input type="text" value="<?php echo $search_text; ?>" name="s" id="s" onblur="if (this.value == '')  
+	        <input type="text" value="<?php //echo $search_text; ?>" name="s" id="s" onblur="if (this.value == '')  
 
-	        {this.value = '<?php echo $search_text; ?>';}"  
+	        {this.value = '<?php //echo $search_text; ?>';}"  
 
-	        onfocus="if (this.value == '<?php echo $search_text; ?>')  
+	        onfocus="if (this.value == '<?php //echo $search_text; ?>')  
 
 	        {this.value = '';}" /> 
 
@@ -85,7 +85,7 @@
 
 	    </form>  
 
-	  </div>
+	  </div>-->
 
 		
 
