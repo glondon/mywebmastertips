@@ -53,8 +53,8 @@
     <input type="hidden" name="cx" value="partner-pub-0372492470050030:xqkpe1-7jyl" />
     <input type="hidden" name="cof" value="FORID:10" />
     <input type="hidden" name="ie" value="ISO-8859-1" />
-    <input type="text" name="q" size="31" />
-    <input type="submit" name="sa" value="Search" />
+    <input type="text" name="q" size="28" />
+    <!--<input type="submit" name="sa" value="Search" />-->
 
   </div>
 
