@@ -29,16 +29,22 @@ if(!empty($_POST)){
 
 	if($name == '')
 		$errors[] = 'Enter name';
+	if($name != '' && strlen($name) > 50)
+		$errors[] = 'Name maxed';
 	if($phone != '' && !preg_match('/^(\d[\s-]?)?[\(\[\s-]{0,2}?\d{3}[\)\]\s-]{0,2}?\d{3}[\s-]?\d{4}$/i', $phone))
 		$errors[] = 'Invalid phone';
+	if($phone != '' && strlen($phone) > 20)
+		$errors[] = 'Phone maxed';
 	if($email == '')
 		$errors[] = 'Enter email';
 	if($email != '' && !filter_var($email, FILTER_VALIDATE_EMAIL))
 		$errors[] = 'Invalid email';
+	if($email != '' && strlen($email) > 50)
+		$errors[] = 'Email maxed';
 	if(!email_check($email, $source))
 		$errors[] = 'Email exists';
 	if($comments != '' && strlen($comments) > 100)
-		$errors[] = 'Comments max';
+		$errors[] = 'Comments maxed';
 	if($captcha == '')
 		$errors[] = 'Enter captcha';
 	if($captcha != '' && md5($captcha) != $_SESSION['randomnr2'])
