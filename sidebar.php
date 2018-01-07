@@ -9,7 +9,54 @@
 		<?php if ( function_exists('dynamic_sidebar') && dynamic_sidebar(1) ) : else : ?>
 
 	   	<ul>
-	   		<br /><script type="text/javascript" src="http://www.getresponse.com/view_webform.js?wid=89489"></script><br />
+	   		<div style="magin-top:10px;margin-bottom:10px">
+	   			<div id="loadingDiv"><img src="<?php echo get_template_directory_uri() ?>/images/loading.gif" /></div>
+				<div id="sub_success" style="display:none"></div>
+				<form action="subscribe.php" method="post" id="subscribe_form">
+				  <fieldset id="subscribe_fieldset">
+				    <legend id="subscribe_legend">Free Jazz Trumpet Stuff</legend>
+				    <ul id="sub_errors" style="display:none;color:red;text-align:left;list-style:none"></ul>
+				    <input type="text" name="name" id="subscribe_name" value="" placeholder="Name" />
+				    <input type="text" name="phone" id="subscribe_phone" value="" placeholder="Phone (optional)" />
+				    <input type="text" name="email" id="subscribe_email" value="" placeholder="Email" />
+				    <textarea rows="2" cols="16" name="comments" id="subscribe_comments" placeholder="Comments (optional)" maxlength="100"></textarea>
+				    <input name="captcha" id="subscribe_captcha" type="text" placeholder="Enter Text"><br>
+				    <img src="<?php echo get_template_directory_uri() ?>/captcha.php" id="captcha_img" /><br>
+				    <input type="submit" id="subscribe_submit" value="Subscribe" />
+				  </fieldset>
+				</form>
+				<script type="text/javascript">
+				  $('document').ready(function(){
+				    //subscribe
+				    $('#subscribe_submit').click(function(e){
+
+				        e.preventDefault();
+
+				        $('#sub_errors').empty();
+
+				        $.post('<?php echo get_template_directory_uri() ?>/subscribe.php', $('#subscribe_form').serialize(), function(data){
+				          if(data.success){
+				            $('#sub_success').fadeIn();
+				            $('#sub_success').html('<p>Thank you for subscribing!</p>');
+				            $('#subscribe_form').fadeOut();
+				          } 
+				          else{
+				            $('#sub_errors').show();
+				            for(var i in data.errors)
+				              $('#sub_errors').append('<li>' + data.errors[i] + '</li>');                                 
+				          }
+
+				        }, 'json');
+				    });
+				  });
+				  // Ajax loading gif...
+				$(document).ajaxStart(function(){
+				    $('#loadingDiv').show();
+				 }).ajaxStop(function(){
+				    $('#loadingDiv').hide();
+				 });
+				</script>
+	   		</div>
 	   	</ul>
 
 	    <h4><?php _e('Categories'); ?></h4>
