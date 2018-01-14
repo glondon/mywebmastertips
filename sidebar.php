@@ -47,7 +47,8 @@
 				        }, 'json');
 				    });
 				  });
-				  // Ajax loading gif...
+
+			  	// Ajax loading gif...
 				$(document).ajaxStart(function(){
 				    $('#loadingDiv').show();
 				 }).ajaxStop(function(){
