@@ -4,17 +4,15 @@
 
 	<div id="sidebar-left">
 
-	
-
 		<?php if ( function_exists('dynamic_sidebar') && dynamic_sidebar(1) ) : else : ?>
 
-	   	<ul>
+		<ul>
 	   		<div style="magin-top:10px;margin-bottom:10px">
 	   			<div id="loadingDiv"><img src="<?php echo get_template_directory_uri() ?>/images/loading.gif" /></div>
 				<div id="sub_success" style="display:none"></div>
 				<form action="subscribe.php" method="post" id="subscribe_form">
 				  <fieldset id="subscribe_fieldset">
-				    <legend id="subscribe_legend">Free Jazz Trumpet Stuff</legend>
+				    <legend id="subscribe_legend">Free WebMaster Lessons</legend>
 				    <ul id="sub_errors" style="display:none;color:red;text-align:left;list-style:none"></ul>
 				    <input type="text" name="name" id="subscribe_name" value="" placeholder="Name" />
 				    <input type="text" name="phone" id="subscribe_phone" value="" placeholder="Phone (optional)" />
