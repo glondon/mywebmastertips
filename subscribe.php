@@ -118,7 +118,7 @@ function email_admin($data)
 
 	$to = EMAIL;
 	$subject = 'You have a new subscriber on ' . date('Y/m/d');
-	$body = '<p>Lead details from JazzTrumpetLicks are below:</p>;
+	$body = '<p>Lead details from '.$data['source'].' are below:</p>;
 		<ul>
 			<li>Name: '.$data['name'].'</li>
 			<li>Email: '.$data['email'].'</li>
