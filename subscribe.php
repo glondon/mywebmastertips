@@ -103,9 +103,9 @@ function email_user($data)
 
 	$to = $data['email'];
 	$subject = $data['name'] . ', thanks for subscribing.';
-	$body = '<p>You made the right decision to join the JazzTrumpetLicks mailing list.</p>';
-	$body .= '<p>I wanted to start things off by giving you a list of chords you should focus on as a jazz musician.</p>';
-	$body .= '<p><a href="'.URL.'basic-chords-to-learn/" target="_blank">'.URL.'basic-chords-to-learn/</a></p>';
+	$body = '<p>You made the right decision to join the '.$data['source'].' mailing list.</p>';
+	$body .= '<p>We will keep you up to date with new technologies in the webmaster world.</p>';
+	$body .= '<p><a href="'.URL.'" target="_blank">'.URL.'</a> - keep an eye on this site.</p>';
 	$body .= '<p>We look forward to working with you!</p>';
 
 	mail($to, $subject, $body, $headers);
