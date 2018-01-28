@@ -1786,3 +1786,11 @@ img.right
 	padding-bottom:18px;
 
 }
+
+/* subscribe form items */
+#subscribe_name, #subscribe_email, #subscribe_captcha, #subscribe_phone, #subscribe_comments {padding:5px;margin-top:8px}
+#subscribe_submit {padding:10px;margin-top:8px;margin-bottom:8px}
+#captcha_img {margin-top:8px}
+#subscribe_fieldset {padding:5px;min-height:325px;max-width:200px}
+#subscribe_legend {padding:5px;font-size:18px}
+#loadingDiv {display : block;position: fixed;top: 50%;left: 50%;display:none}
