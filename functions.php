@@ -688,4 +688,10 @@ function comment_author_link_window() {
 
 add_filter('get_comment_author_link', 'comment_author_link_window');
 
+function include_jquery() {
+  wp_register_script('add_jquery', 'https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js', array( 'jquery' ));
+  wp_enqueue_script('add_jquery');
+}
+add_action('wp_enqueue_scripts', 'include_jquery');
+
 ?>
